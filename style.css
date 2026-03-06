@@ -115,3 +115,10 @@ border:none;
 ul{
 list-style:none;
 }
+
+.reviews-bg{
+background-image:url("https://images.unsplash.com/photo-1594007654729-407eedc4be65");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
