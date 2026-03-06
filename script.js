@@ -1,45 +1,47 @@
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name,price){
 
 cart.push({name,price});
-alert(name + " added to cart");
 
 localStorage.setItem("cart",JSON.stringify(cart));
+
+alert(name + " added to cart");
 
 }
 
 function showCart(){
 
-cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-let list = document.getElementById("cartItems");
-let total = 0;
+let list=document.getElementById("cartItems");
+let total=0;
 
 list.innerHTML="";
 
-cart.forEach(item =>{
+cart.forEach(item=>{
 
-let li = document.createElement("li");
-li.textContent = item.name + " Rs." + item.price;
+let li=document.createElement("li");
+
+li.textContent=item.name+" - ₹"+item.price;
+
 list.appendChild(li);
 
-total += item.price;
+total+=item.price;
 
 });
 
-document.getElementById("total").textContent="Total: Rs."+total;
+document.getElementById("total").textContent="Total: ₹"+total;
 
 }
 
 function checkout(){
 
-alert("Order placed successfully! 🍕");
+alert("Order placed successfully 🍕");
 
-localStorage.removeItem("cart");   // remove saved cart
-cart = [];                         // empty the cart array
+cart=[];
 
-showCart();                        // refresh cart display
+localStorage.removeItem("cart");
+
+showCart();
 
 }
 

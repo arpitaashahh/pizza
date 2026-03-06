@@ -1,88 +1,117 @@
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
 text-align:center;
-background-color: rgba(255,255,255,0.85);
-background-blend-mode: lighten;
+color:white;
 }
 
-header{
-background:#ff5733;
-color:white;
+/* navbar */
+
+nav{
+background:#c0392b;
 padding:15px;
 }
 
 nav a{
-margin:10px;
 color:white;
+margin:15px;
 text-decoration:none;
+font-size:18px;
 font-weight:bold;
 }
 
-.hero{
-.hero{
-background-image: url("https://images.unsplash.com/photo-1604382355076-af4b0eb60143");
-background-size: cover;
-background-position: center;
-color: white;
-padding: 120px;
+/* HOMEPAGE */
+
+.home-bg{
+background-image:url("https://images.unsplash.com/photo-1593560708920-61dd98c46a4e");
+background-size:cover;
+background-position:center;
+min-height:100vh;
 }
+
+/* MENU PAGE */
+
+.menu-bg{
+background-image:url("https://images.unsplash.com/photo-1513104890138-7c749659a591");
+background-size:cover;
+background-position:center;
+min-height:100vh;
 }
+
+/* OFFERS PAGE */
+
+.offers-bg{
+background-image:url("https://images.unsplash.com/photo-1548365328-9f547fb0953b");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+/* ORDER PAGE */
+
+.order-bg{
+background-image:url("https://images.unsplash.com/photo-1604382355076-af4b0eb60143");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+/* CONTACT PAGE */
+
+.contact-bg{
+background-image:url("https://images.unsplash.com/photo-1555992336-03a23c7b20ee");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+/* overlay so text is readable */
+
+.overlay{
+background:rgba(0,0,0,0.6);
+min-height:100vh;
+padding:40px;
+}
+
+/* menu cards */
 
 .menu{
 display:flex;
 justify-content:center;
-gap:20px;
+gap:30px;
 flex-wrap:wrap;
 }
 
 .item{
-border:1px solid gray;
-padding:15px;
 background:white;
-width:150px;
+color:black;
+padding:20px;
+border-radius:10px;
+width:200px;
 }
 
 button{
-background:#ff5733;
+background:#e74c3c;
 color:white;
 border:none;
-padding:10px;
+padding:10px 15px;
+border-radius:5px;
 cursor:pointer;
 }
 
-.review{
-background:white;
-margin:10px;
+button:hover{
+background:#c0392b;
+}
+
+input, textarea{
 padding:10px;
+width:250px;
+margin:10px;
 border-radius:5px;
+border:none;
 }
 
-.offer{
-background:white;
-margin:15px;
-padding:15px;
-}
-
-.menu-bg{
-background-image: url("https://images.unsplash.com/photo-1593560708920-61dd98c46a4e");
-background-size: cover;
-background-position: center;
-}
-
-.offers-bg{
-background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591");
-background-size: cover;
-background-position: center;
-}
-
-.order-bg{
-background-image: url("https://images.unsplash.com/photo-1548365328-9f547fb0953b");
-background-size: cover;
-background-position: center;
-}
-
-.contact-bg{
-background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
-background-size: cover;
-background-position: center;
+ul{
+list-style:none;
 }

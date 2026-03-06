@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Your Order</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
 
-<body onload="showCart()" class="order-bg">
+<body class="order-bg" onload="showCart()">
+
+<div class="overlay">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="offers.html">Offers</a>
+<a href="order.html">Cart</a>
+<a href="contact.html">Contact</a>
+</nav>
 
 <h1>Your Cart</h1>
 
@@ -16,13 +27,15 @@
 
 <h2>Delivery Details</h2>
 
-<input type="text" placeholder="Enter Your Name"><br><br>
+<input type="text" placeholder="Enter Your Name"><br>
 
-<input type="text" placeholder="Enter Address"><br><br>
+<textarea placeholder="Enter Address"></textarea><br>
 
-<input type="text" placeholder="Phone Number"><br><br>
+<input type="text" placeholder="Phone Number"><br>
 
 <button onclick="checkout()">Place Order</button>
+
+</div>
 
 </body>
 </html>
